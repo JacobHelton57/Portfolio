@@ -23,6 +23,13 @@ body {
 	outline: solid black 1px; */
 }
 
+.card-text{
+    font-size:19px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .navbar {
 	color: #777;
 	width: 100%;

@@ -5,28 +5,24 @@
 	-Each project page would include link to external page as well as links to github repository
 
 -->
-
 	<div class="row" id="projects-page">
-		<div class="col-sm-3"></div>
+		<div class="col"></div>
 		<div class="col-sm-6" style="text-align:center;">
 			<h1 class="mt-5" style="color:#777">Projects</h1>
 			<hr style="border: solid 0.5px #AAA; width: 80%">
 		</div>
-		<div class="col-sm-3"></div>
+		<div class="col"></div>
 	</div>
-	<div class="row projects">
+	<div class="card-columns">
 		{% for project in site.categories.projects limit:6 %}
-		<div class="col-md-4">
-			<a href="{{site.baseurl}}{{project.url}}">
 			<div class="card">
 				<img class="card-img-top img-fluid" src="img/projects/{{project.image}}" width="100%">
 				<div class="card-body">
 					<h4 class="card-title">{{project.title}}</h4>
 					<h5 class="card-subtitle mb-2 text-muted">{{project.subtitle}}</h5>
 					<p class="card-text ">{{project.description}}</p>
+					<a href="{{site.baseurl}}{{project.url}}" class="btn btn-primary">Details</a>
 				</div>
-			</div>
-			</a>
-		</div>
+			</div>		
 		{% endfor %}
 	</div>
