@@ -1,26 +1,48 @@
 body {
-	/*
+	/* OLD Background...
 	background-image: linear-gradient(#FFF, #000); */
-	background-image: linear-gradient(bottom, #333 0%, #EEE 100%);
-	background-image: linear-gradient(to top, #333 0%, #EEE 100%);
+	/*
+	background-image: linear-gradient(bottom, ##C09F80 0%, #D7CEC7 100%);
+	background-image: linear-gradient(to top, #C09F80 0%, #D7CEC7 100%); */
+	background-color: #D7CEC7;
 	background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
     background-size: 100% auto;
 }
 
-.container-fluid {
-	
+h1 {
+	color: #76323F;
+}
+
+#about {
+	/*
+	padding: 1.5rem;
+	background-color: #C09F80;
+	border-radius: 2px;
+	border: 1px solid #DDD;
+	box-shadow: 3px 3px 5px #BBB;
+	*/
+}
+
+#projects {
+}
+
+.row {
+	margin-bottom: 5em;
+}
+
+
+hr {
+	border: solid 0.5px #565656;
+	width: 50%;
 }
 
 .card {
 	border: none;
-	box-shadow: 1px 1px 3px #444;
-	background-color: #F8F8F8;
 	margin: 5% 0%;
-	height: 28rem;
-	/*
-	outline: solid black 1px; */
+	height: auto;
+	border-radius: 0;
 }
 
 .card-text{
@@ -30,14 +52,34 @@ body {
     overflow: hidden;
 }
 
+.card-img-top {
+	border-radius: 0;
+	opacity: 1;
+	transition: .4s ease;
+	backface-visibility: hidden;
+}
+
+.card-img-overlay {
+	transition: .4s ease;
+	opacity: 0;
+}
+
+.card:hover .card-img-top {
+	opacity: .1;
+}
+
+.card:hover .card-img-overlay {
+	opacity: 1;
+}
+
 .navbar {
-	color: #777;
+	color: #565656;
 	width: 100%;
 	background: none;
 }
 
 a, a:hover {
-	color: black;
+	color: #565656;
 	text-decoration: none;
 }
 
