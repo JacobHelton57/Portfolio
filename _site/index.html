@@ -4,14 +4,14 @@
 	<title>Jacob Helton Portfolio</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="/css/master.css">
+	<link rel="stylesheet" type="text/css" href="/portfolio/css/update.css">
 </head>
 
 <body>
-	<div class="container-fluid"> <!-- Container for body -->
-		<!-- Nav bar -->
-		<div class="row">
-	<nav class="navbar navbar-expand-lg navbar-light">
+
+		<div class="container-fluid">
+			<div class="row">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 		<a class="navbar-brand" href="#">Jacob Helton</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -19,16 +19,16 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a class="nav-link" href="/portfolio/">Home<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="/portfolio/#home">Home<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/portfolio/#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="/portfolio/#resume">Resume</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/portfolio/#projects">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="/portfolio/resume/">Resume</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link disabled" href="#">Contact</a>
@@ -38,32 +38,156 @@
 	</nav>
 </div>
 
-		<!-- Insert content here -->
-		<div class="container">
-	<div class="row" id="about">
-	<div class="col" style="text-align:center;">
-		<!-- Intentionally left blank-->
+			<!-- <div class="container"> -->
+<section id="home">
+		<div class="jumbotron introduction">
+			<h1 class="display-4">Student</h1>
+			<hr>
+			<h1 class="display-4">Web Designer</h1>
+			<hr>
+			<h1 class="display-4">Developer</h1>
+		</div>
+</section>
+	<section id="about">
+	<div class="row bio">
+		<div class="col-sm-5">
+			<img src="/portfolio/img/jacob-profile.png" width="80%" style="border-radius:50%;">
+		</div>
+		<div class="col-sm-7">
+			<h3>About Me</h3>
+			<p>I am currently finishing my Associate's Degree in General Studies with a concentration in Computer Sciencea at John Tyler Community College. I am planning on transferring into VCU's college of Engineering to complete a bachelor's degree in Computer Science. As of now, my programming experience varies from having numerous web development projects under my belt to having done light databasing and learning Java. Regardless of the have enjoyed gaining experience in all of the areas of software development that I have encountered.</p>
+			<p>My love for computer science started in my junior year of high school when I decided to take a class in Oracle Databasing at the Chesterfield Career & Technical Center. There I was introduced to SQL, HTML, and CSS. My love for programming started there and has only continued into my college and adult life. As a result of in-class interviews while still in high-school, I have had the wonderful opportunity to serve IT internships at the Science Museum of Virginia as well as Allen & Allen.</p>
+		</div>
 	</div>
-	<div class="col-sm-8" style="text-align:center;">
-		<h1>Jacob Helton</h1>
-		<hr>
-		<h4 style="color:#777">Student, Web Designer, Budding Developer</h4>
+</section>
+	<section id="resume">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<h4><u>Objective</u></h4>
+			</div>
+			<div class="col-sm-10">
+				<p>Motivated professional with experience in both IT and development hoping to apply and expand my skills in the workforce. Seeking a work environment that encourages learning through collaboration and hands-on problem solving.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2">
+				<h4><u>Experience</u></h4>
+			</div>
+			<div class="col-sm-10">
+				<h5>Allen, Allen Allen, & Allen</h5>
+				<h6>IT Intern (January 2017-Present)</h6>
+				<ul>
+					<li>Provide Helpdesk support and training to users</li>
+					<li>Manage domain objects via Active Directory Users and Computers</li>
+					<li>Maintain and support Citrix VDI environments via Citrix Director</li>
+					<li>Configure, deploy, track, and maintain desktop computers via Microsoft Deployment Toolkit and other tools</li>
+				</ul>
+				<p></p>
+				<h5>Chick fil-A</h5>
+				<h6>Front Side Team Member (August 2016 – February 2017)</h6>
+				<ul>
+					<li>Tendered transactions, maintained equipment and dining room</li>
+					<li>Delivered superior customer service</li>
+					<li>Trained new hires</li>
+				</ul>
+				<p></p>
+				<h5>Science Museum of Virginia</h5>
+				<h6>IT Intern (January 2016-May 2016</h6>
+				<ul>
+					<li>Decommissioned, reformatted, and set up desktop computers</li>
+					<li>Light maintenance on network switches and servers</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2">
+				<h4><u>Education</u></h4>
+			</div>
+			<div class="col-sm-10">
+				<h5>John Tyler Community College (2017-Present)</h5>
+				<ul>
+					<li>Associates of Science in General Studies – anticipated in May 2019</li>
+					<ul><li>Computer Science Specialization</li></ul>
+				</ul>
+				<h5>Chesterfield Career & Technical Center (2015-2017)</h5>
+				<ul><li>Oracle - Database Design & Programming in SQL & PL/SQL</li></ul>
+				<h5>Thomas Dale High School (2013-2017)</h5>
+				<ul><li>Advanced diploma</li></ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2">
+				<h4><u>Skills</u></h4>
+			</div>
+			<div class="col-sm-10">
+				<ul>
+					
+					<li><a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=132&cvid=MA+JjKoRohbca6OvwfSssQ==" target="_blank">MTA Database Administration Fundamentals Certified</a></li>
+					<li><a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=186&cvid=af20+uCoBsl0S6DVpoD1xg==" target="_blank">IC3 GS4 Digital Literacy Certified</a></li>
+					<li><a href="https://drive.google.com/open?id=1DUZjRY7KvjLTOaibtlDJYi0p0zPpKRxv" target="_blank">CIW Site Development Associate Certified</a></li>
+					<li>Proficient in SQL, PL/SQL, HTML/CSS – Novice in PowerShell and Java</li>
+					<li>Experienced in end-user support on Windows 7-10, Mac OS X, and iOS devices</li>
+				</ul>
+			</div>
+		</div>
+		<!--
+		<div clas="col-sm-8">
+			<h2>Jacob Helton</h2>
+			<h5 class="text-uppercase">(804) 592-7893 | jacobhelton57@gmail.com</h5>
+			<p></p>
+			<h4><u>Objective</u></h4>
+			<p>Motivated professional with experience in both IT and development hoping to apply and expand my skills in the workforce. Seeking a work environment that encourages learning through collaboration and hands-on problem solving.</p>
+			<p></p>
+			<h4><u>Work Experience</u></h4>
+			<h5>Allen, Allen Allen, & Allen</h5>
+			<h6>IT Intern (January 2017-Present)</h6>
+			<ul>
+				<li>Provide Helpdesk support and training to users</li>
+				<li>Manage domain objects via Active Directory Users and Computers</li>
+				<li>Maintain and support Citrix VDI environments via Citrix Director</li>
+				<li>Configure, deploy, track, and maintain desktop computers via Microsoft Deployment Toolkit and other tools</li>
+			</ul>
+			<p></p>
+			<h5>Chick fil-A</h5>
+			<h6>Front Side Team Member (August 2016 – February 2017)</h6>
+			<ul>
+				<li>Tendered transactions, maintained equipment and dining room</li>
+				<li>Delivered superior customer service</li>
+				<li>Trained new hires</li>
+			</ul>
+			<p></p>
+			<h5>Science Museum of Virginia</h5>
+			<h6>IT Intern (January 2016-May 2016</h6>
+			<ul>
+				<li>Decommissioned, reformatted, and set up desktop computers</li>
+				<li>Light maintenance on network switches and servers</li>
+			</ul>
+			<p></p>
+			<h4><u>Education</u></h4>
+			<h5>John Tyler Community College (2017-Present)</h5>
+			<ul>
+				<li>Associates of Science in General Studies – anticipated in May 2019</li>
+				<ul><li>Computer Science Specialization</li></ul>
+			</ul>
+			<h5>Chesterfield Career & Technical Center (2015-2017)</h5>
+			<ul><li>Oracle - Database Design & Programming in SQL & PL/SQL</li></ul>
+			<h5>Thomas Dale High School (2013-2017)</h5>
+			<ul><li>Advanced diploma</li></ul>
+			<h4><u>Skills and Certifications</u></h4>
+			<ul>
+				<li><a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=132&cvid=MA+JjKoRohbca6OvwfSssQ==" target="_blank">MTA Database Administration Fundamentals Certified</a></li>
+				<li><a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=186&cvid=af20+uCoBsl0S6DVpoD1xg==" target="_blank">IC3 GS4 Digital Literacy Certified</a></li>
+				<li><a href="https://drive.google.com/open?id=1DUZjRY7KvjLTOaibtlDJYi0p0zPpKRxv" target="_blank">CIW Site Development Associate Certified</a></li>
+				<li>Proficient in SQL, PL/SQL, HTML/CSS – Novice in PowerShell and Java</li>
+				<li>Experienced in end-user support on Windows 7-10, Mac OS X, and iOS devices</li>
+			</ul>
+		</div>
+		<div clas="col"></div>
+	-->
 	</div>
-	<div class="col" style="text-align:center;">
 	</div>
-</div>
-
-
-<div class="row">
-	<div class="col-sm-5">
-		<img src="img/jacob.png" width="100%">
-	</div>
-	<div class="col-sm-7">
-		<h4 style="color: #37518F;">About Me</h4>
-		<p style="color: #3D69A7;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p style="color: #3D69A7;">Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Id velit ut tortor pretium viverra. Amet risus nullam eget felis eget nunc. At in tellus integer feugiat. Sagittis orci a scelerisque purus semper eget duis at. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat. Erat velit scelerisque in dictum non consectetur. Amet nisl purus in mollis nunc sed</p>
-	</div>
-</div>
+</section>
 	<!-- ##Ideas
 	
 	-In addition to the cards being dynamically served by the contents of the directory, each project page (or modal...?) would also be pulling information from a combination of default template and markdown or lightweight html
@@ -71,147 +195,82 @@
 	-Each project page would include link to external page as well as links to github repository
 
 -->
-<div class="row mt-5" id="projects">
-	<div class="col"></div>
-	<div class="col-sm-8" style="text-align:center;">
-		<h1 class="mt-5">Projects</h1>
-		<hr>
+<section id="projects">
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-sm-8 section-title">
+			<h1 class="display-4">Projects</h1>
+			<hr>
+		</div>
+		<div class="col"></div>
 	</div>
-	<div class="col"></div>
-</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="card-columns">
+				
+					<div class="card">
+						<img class="card-img-top img-fluid" src="img/projects/Mockup.png" width="100%">
+						<div class="card-img-overlay">
+							<h4 class="card-title" style="color:#76323F;">Maxx Potential Mockup</h4>
+							<h5 class="card-subtitle mb-2 text-muted">November 2018</h5>
+							<a href="/portfolio/projects/2018/11/01/Maxx-Mockup.html" class="btn btn-primary">Details</a>
+						</div>
+					</div>		
+				
+					<div class="card">
+						<img class="card-img-top img-fluid" src="img/projects/JTCCPC.png" width="100%">
+						<div class="card-img-overlay">
+							<h4 class="card-title" style="color:#76323F;">JTCC Programming Club</h4>
+							<h5 class="card-subtitle mb-2 text-muted">December 2017</h5>
+							<a href="/portfolio/projects/2018/09/17/JTCC-Programming-Club.html" class="btn btn-primary">Details</a>
+						</div>
+					</div>		
+				
+					<div class="card">
+						<img class="card-img-top img-fluid" src="img/projects/Summit.png" width="100%">
+						<div class="card-img-overlay">
+							<h4 class="card-title" style="color:#76323F;">Jump Summit Trampoline Park</h4>
+							<h5 class="card-subtitle mb-2 text-muted">April 2017</h5>
+							<a href="/portfolio/projects/2017/04/01/Jump-Summit.html" class="btn btn-primary">Details</a>
+						</div>
+					</div>		
+				
+					<div class="card">
+						<img class="card-img-top img-fluid" src="img/projects/Shelter.png" width="100%">
+						<div class="card-img-overlay">
+							<h4 class="card-title" style="color:#76323F;">For All Paws Animal Shelter</h4>
+							<h5 class="card-subtitle mb-2 text-muted">November 2016</h5>
+							<a href="/portfolio/projects/2016/09/17/For-All-Paws.html" class="btn btn-primary">Details</a>
+						</div>
+					</div>		
+				
+					<div class="card">
+						<img class="card-img-top img-fluid" src="img/projects/Nicole.png" width="100%">
+						<div class="card-img-overlay">
+							<h4 class="card-title" style="color:#76323F;">Nicole's Daydream Photography</h4>
+							<h5 class="card-subtitle mb-2 text-muted">April 2016</h5>
+							<a href="/portfolio/projects/2016/05/01/Nicoles-Daydream-Photography.html" class="btn btn-primary">Details</a>
+						</div>
+					</div>		
+				
+					<div class="card">
+						<img class="card-img-top img-fluid" src="img/projects/2016champs.png" width="100%">
+						<div class="card-img-overlay">
+							<h4 class="card-title" style="color:#76323F;">BCS Bowls 2016 National Championship</h4>
+							<h5 class="card-subtitle mb-2 text-muted">December 2015</h5>
+							<a href="/portfolio/projects/2015/12/01/BCS-National-Champs.html" class="btn btn-primary">Details</a>
+						</div>
+					</div>		
+				
+			</div>
+		</div>
+	</div>
+</section>
 
-<div class="row">
-	<div class="card-columns">
-		
-			<div class="card">
-				<img class="card-img-top img-fluid" src="img/projects/Mockup.png" width="100%">
-				<div class="card-img-overlay">
-					<h4 class="card-title" style="color:#76323F;">Maxx Potential Mockup</h4>
-					<h5 class="card-subtitle mb-2 text-muted">November 2018</h5>
-					<p class="card-text ">This was a challenge to recreate a webpage with only an image of the page we were to recreate. Here is my rendition.</p>
-					<a href="/portfolio/projects/2018/11/01/Maxx-Mockup.html" class="btn btn-primary">Details</a>
-				</div>
-			</div>		
-		
-			<div class="card">
-				<img class="card-img-top img-fluid" src="img/projects/JTCCPC.png" width="100%">
-				<div class="card-img-overlay">
-					<h4 class="card-title" style="color:#76323F;">JTCC Programming Club</h4>
-					<h5 class="card-subtitle mb-2 text-muted">December 2017</h5>
-					<p class="card-text ">Revamped design of the page, moved hosting from paid hosting to Github pages for easier collaboration and version management of site. First experience with Jekyll static site generator.</p>
-					<a href="/portfolio/projects/2018/09/17/JTCC-Programming-Club.html" class="btn btn-primary">Details</a>
-				</div>
-			</div>		
-		
-			<div class="card">
-				<img class="card-img-top img-fluid" src="img/projects/Summit.png" width="100%">
-				<div class="card-img-overlay">
-					<h4 class="card-title" style="color:#76323F;">Jump Summit Trampoline Park</h4>
-					<h5 class="card-subtitle mb-2 text-muted">April 2017</h5>
-					<p class="card-text ">This was a team submission for the 2017 FBLA Web Site Design Competition. We placed 1st in the Tri-Cities Region and 2nd in the state of VA.</p>
-					<a href="/portfolio/projects/2017/04/01/Jump-Summit.html" class="btn btn-primary">Details</a>
-				</div>
-			</div>		
-		
-			<div class="card">
-				<img class="card-img-top img-fluid" src="img/projects/Shelter.png" width="100%">
-				<div class="card-img-overlay">
-					<h4 class="card-title" style="color:#76323F;">For All Paws Animal Shelter</h4>
-					<h5 class="card-subtitle mb-2 text-muted">November 2016</h5>
-					<p class="card-text ">Group project that I lead. Two other classmates and I developed a webpage for a mock animal shelter that we had to create.</p>
-					<a href="/portfolio/projects/2016/09/17/For-All-Paws.html" class="btn btn-primary">Details</a>
-				</div>
-			</div>		
-		
-			<div class="card">
-				<img class="card-img-top img-fluid" src="img/projects/Nicole.png" width="100%">
-				<div class="card-img-overlay">
-					<h4 class="card-title" style="color:#76323F;">Nicole's Daydream Photography</h4>
-					<h5 class="card-subtitle mb-2 text-muted">April 2016</h5>
-					<p class="card-text ">Photography portfolio site developed for a friend. I developed this using bootstrap.</p>
-					<a href="/portfolio/projects/2016/05/01/Nicoles-Daydream-Photography.html" class="btn btn-primary">Details</a>
-				</div>
-			</div>		
-		
-			<div class="card">
-				<img class="card-img-top img-fluid" src="img/projects/2016champs.png" width="100%">
-				<div class="card-img-overlay">
-					<h4 class="card-title" style="color:#76323F;">BCS Bowls 2016 National Championship</h4>
-					<h5 class="card-subtitle mb-2 text-muted">December 2015</h5>
-					<p class="card-text ">This is one of the first webpages I built using Bootstrap. Mock webpage for the 2016 Bowl Championship Series National Championship Game.</p>
-					<a href="/portfolio/projects/2015/12/01/BCS-National-Champs.html" class="btn btn-primary">Details</a>
-				</div>
-			</div>		
-		
-	</div>
-</div>
-	
-<div class="row" id="resume">
-	<div class="col"></div>
-	<div class="col-sm-8" style="text-align:center;">
-		<h1>Resume</h1>
-		<hr>
-	</div>
-	<div class="col"></div>
-</div>
 
-<div class="row">
-	<div clas="col"></div>
-	<div clas="col-sm-8">
-		<h2>Jacob Helton</h2>
-		<h5 class="text-uppercase">(804) 592-7893 | jacobhelton57@gmail.com</h5>
-		<p></p>
-		<h4><u>Objective</u></h4>
-		<p>Motivated professional with experience in both IT and development hoping to apply and expand my skills in the workforce. Seeking a work environment that encourages learning through collaboration and hands-on problem solving.</p>
-		<p></p>
-		<h4><u>Work Experience</u></h4>
-		<h5>Allen, Allen Allen, & Allen</h5>
-		<h6>IT Intern (January 2017-Present)</h6>
-		<ul>
-			<li>Provide Helpdesk support and training to users</li>
-			<li>Manage domain objects via Active Directory Users and Computers</li>
-			<li>Maintain and support Citrix VDI environments via Citrix Director</li>
-			<li>Configure, deploy, track, and maintain desktop computers via Microsoft Deployment Toolkit and other tools</li>
-		</ul>
-		<p></p>
-		<h5>Chick fil-A</h5>
-		<h6>Front Side Team Member (August 2016 – February 2017)</h6>
-		<ul>
-			<li>Tendered transactions, maintained equipment and dining room</li>
-			<li>Delivered superior customer service</li>
-			<li>Trained new hires</li>
-		</ul>
-		<p></p>
-		<h5>Science Museum of Virginia</h5>
-		<h6>IT Intern (January 2016-May 2016</h6>
-		<ul>
-			<li>Decommissioned, reformatted, and set up desktop computers</li>
-			<li>Light maintenance on network switches and servers</li>
-		</ul>
-		<p></p>
-		<h4><u>Education</u></h4>
-		<h5>John Tyler Community College (2017-Present)</h5>
-		<ul>
-			<li>Associates of Science in General Studies – anticipated in May 2019</li>
-			<ul><li>Computer Science Specialization</li></ul>
-		</ul>
-		<h5>Chesterfield Career & Technical Center (2015-2017)</h5>
-		<ul><li>Oracle - Database Design & Programming in SQL & PL/SQL</li></ul>
-		<h5>Thomas Dale High School (2013-2017)</h5>
-		<ul><li>Advanced diploma</li></ul>
-		<h4><u>Skills and Certifications</u></h4>
-		<ul>
-			<li><a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=132&cvid=MA+JjKoRohbca6OvwfSssQ==" target="_blank">MTA Database Administration Fundamentals Certified</a></li>
-			<li><a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=186&cvid=af20+uCoBsl0S6DVpoD1xg==" target="_blank">IC3 GS4 Digital Literacy Certified</a></li>
-			<li><a href="https://drive.google.com/open?id=1DUZjRY7KvjLTOaibtlDJYi0p0zPpKRxv" target="_blank">CIW Site Development Associate Certified</a></li>
-			<li>Proficient in SQL, PL/SQL, HTML/CSS – Novice in PowerShell and Java</li>
-			<li>Experienced in end-user support on Windows 7-10, Mac OS X, and iOS devices</li>
-		</ul>
-	</div>
-	<div clas="col"></div>
-</div>
-</div>
 
-	</div>
+<!-- </div> -->
+
+		</div>
 </body>
 </html>

@@ -1,0 +1,107 @@
+body {
+	background-image: url("/portfolio/img/background-board.jpg");
+	background-size: 100% auto;
+	background-attachment: fixed;
+	padding: 0;
+	margin: 0;
+}
+
+.container-fluid {
+	padding: 0;
+	width: 100%;
+}
+
+h1 {
+
+}
+
+/* Home Page */
+
+#about {
+	background-color: #565656;
+	padding: 6rem;
+}
+
+.bio h3 {
+	color: #CCC;
+}
+
+.bio p {
+	color: #FFF;
+}
+
+.introduction {
+/* This had the background css currently in body  in case I want to change back to having the background only on home */
+	background: none;
+	padding: 10rem 0;
+	height: 100%;
+	text-align: center;
+	margin: 3rem 0 0 0;
+}
+
+.introduction h1 {
+	color: #FFF;
+}
+
+.introduction hr {
+	border: solid 1px #FFF;
+	width: 20%;
+}
+
+#home {
+	height: 95vh;
+}
+
+/* Projects */
+
+#projects {
+	background-color: #EEE;
+	padding: 3rem;
+}
+
+.section-title {
+	text-align: center;
+}
+
+.card {
+	margin: 5% 0%;
+}
+
+.card-img-top {
+	opacity: 1;
+	transition: .4s ease;
+	backface-visibility: hidden;
+}
+
+.card-img-overlay {
+	transition: .4s ease;
+	opacity: 0;
+}
+
+.card:hover .card-img-top {
+	opacity: .1;
+}
+
+.card:hover .card-img-overlay {
+	opacity: 1;
+}
+
+/* Resume */
+
+#resume {
+	background-color: #FFF;
+}
+
+#resume .container {
+	padding: 3rem;
+}
+
+#resume .container .row {
+	margin-top: 1.5rem;
+}
+
+
+
+
+
+

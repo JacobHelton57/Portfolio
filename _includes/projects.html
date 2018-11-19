@@ -5,27 +5,31 @@
 	-Each project page would include link to external page as well as links to github repository
 
 -->
-<div class="row mt-5" id="projects">
-	<div class="col"></div>
-	<div class="col-sm-8" style="text-align:center;">
-		<h1 class="mt-5">Projects</h1>
-		<hr>
+<section id="projects">
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-sm-8 section-title">
+			<h1 class="display-4">Projects</h1>
+			<hr>
+		</div>
+		<div class="col"></div>
 	</div>
-	<div class="col"></div>
-</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="card-columns">
+				{% for project in site.categories.projects %}
+					<div class="card">
+						<img class="card-img-top img-fluid" src="img/projects/{{project.image}}" width="100%">
+						<div class="card-img-overlay">
+							<h4 class="card-title" style="color:#76323F;">{{project.title}}</h4>
+							<h5 class="card-subtitle mb-2 text-muted">{{project.subtitle}}</h5>
+							<a href="{{site.baseurl}}{{project.url}}" class="btn btn-primary">Details</a>
+						</div>
+					</div>		
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
 
-<div class="row">
-	<div class="card-columns">
-		{% for project in site.categories.projects %}
-			<div class="card">
-				<img class="card-img-top img-fluid" src="img/projects/{{project.image}}" width="100%">
-				<div class="card-img-overlay">
-					<h4 class="card-title" style="color:#76323F;">{{project.title}}</h4>
-					<h5 class="card-subtitle mb-2 text-muted">{{project.subtitle}}</h5>
-					<p class="card-text ">{{project.description}}</p>
-					<a href="{{site.baseurl}}{{project.url}}" class="btn btn-primary">Details</a>
-				</div>
-			</div>		
-		{% endfor %}
-	</div>
-</div>
+

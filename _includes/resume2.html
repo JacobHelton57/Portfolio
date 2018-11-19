@@ -1,0 +1,77 @@
+<section id="resume">
+	<div class="container">
+		<div class="row">
+			{% for section in site.categories.resume %}
+				<div class="col-sm-2">
+					<h4><u><a href="{{site.baseurl}}{{section.url}}">{{ section.title }}</a></u></h4>
+				</div>
+				<div class="col-sm-10">
+					{{ section.content }}
+				</div>
+			{% endfor %}
+		</div>
+
+		<!--
+		<div class="row">
+			<div class="col-sm-2">
+				<h4><u>Experience</u></h4>
+			</div>
+			<div class="col-sm-10">
+				<h5>Allen, Allen Allen, & Allen</h5>
+				<h6>IT Intern (January 2017-Present)</h6>
+				<ul>
+					<li>Provide Helpdesk support and training to users</li>
+					<li>Manage domain objects via Active Directory Users and Computers</li>
+					<li>Maintain and support Citrix VDI environments via Citrix Director</li>
+					<li>Configure, deploy, track, and maintain desktop computers via Microsoft Deployment Toolkit and other tools</li>
+				</ul>
+				<p></p>
+				<h5>Chick fil-A</h5>
+				<h6>Front Side Team Member (August 2016 – February 2017)</h6>
+				<ul>
+					<li>Tendered transactions, maintained equipment and dining room</li>
+					<li>Delivered superior customer service</li>
+					<li>Trained new hires</li>
+				</ul>
+				<p></p>
+				<h5>Science Museum of Virginia</h5>
+				<h6>IT Intern (January 2016-May 2016</h6>
+				<ul>
+					<li>Decommissioned, reformatted, and set up desktop computers</li>
+					<li>Light maintenance on network switches and servers</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2">
+				<h4><u>Education</u></h4>
+			</div>
+			<div class="col-sm-10">
+				<h5>John Tyler Community College (2017-Present)</h5>
+				<ul>
+					<li>Associates of Science in General Studies – anticipated in May 2019</li>
+					<ul><li>Computer Science Specialization</li></ul>
+				</ul>
+				<h5>Chesterfield Career & Technical Center (2015-2017)</h5>
+				<ul><li>Oracle - Database Design & Programming in SQL & PL/SQL</li></ul>
+				<h5>Thomas Dale High School (2013-2017)</h5>
+				<ul><li>Advanced diploma</li></ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2">
+				<h4><u>Skills</u></h4>
+			</div>
+			<div class="col-sm-10">
+				<ul>
+					
+					<li><a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=132&cvid=MA+JjKoRohbca6OvwfSssQ==" target="_blank">MTA Database Administration Fundamentals Certified</a></li>
+					<li><a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=186&cvid=af20+uCoBsl0S6DVpoD1xg==" target="_blank">IC3 GS4 Digital Literacy Certified</a></li>
+					<li><a href="https://drive.google.com/open?id=1DUZjRY7KvjLTOaibtlDJYi0p0zPpKRxv" target="_blank">CIW Site Development Associate Certified</a></li>
+					<li>Proficient in SQL, PL/SQL, HTML/CSS – Novice in PowerShell and Java</li>
+					<li>Experienced in end-user support on Windows 7-10, Mac OS X, and iOS devices</li>
+				</ul>
+			</div>
+		</div> -->
+	</div>
+</section>
