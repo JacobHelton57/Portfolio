@@ -1,3 +1,5 @@
+Helpful Markdown Reference: https://gist.github.com/roachhd/779fa77e9b90fe945b0c
+
 ## Home
 
 You can use the [editor on GitHub](https://github.com/Jakester57/portfolio/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
