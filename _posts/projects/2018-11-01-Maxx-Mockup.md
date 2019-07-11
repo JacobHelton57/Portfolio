@@ -1,10 +1,9 @@
 ---
-layout: default
-title: Maxx Potential Mockup
-subtitle : November 2018
-description: This was a challenge to recreate a webpage with only an image of the page we were to recreate. Here is my rendition.
+title: Maxx Mockup
+repo: https://github.com/JacobHelton57/MAXX-Mockup
+demo: https://jacobhelton57.github.io/MAXX-Mockup/
 category: projects
-image: Mockup.png
+image: maxx-mockup.png
 ---
 
-# This is a title
+This was a challenge to recreate a webpage with only an image of the page we were to recreate. I completed this challenge as part of Maxx Potential's [Career Lab](https://maxxpotential.com/apprentice/) hiring process. Here is my rendition.

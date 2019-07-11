@@ -1,276 +1,155 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<title>Jacob Helton Portfolio</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="/portfolio/css/update.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="/Portfolio/css/styles.css">
+
+  <title>Hello, world!</title>
 </head>
 
 <body>
+	<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="collapse navbar-collapse">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#about">About</a>
+      <a class="nav-item nav-link" href="#projects">Projects</a>
+      <a class="nav-item nav-link" href="#">Resume</a>
+      <a class="nav-item nav-link disabled" href="#">Contact</a>
+      <!--
+      Add some icons for Github and LinkedIn here - float them to the right
+      <a class="nav-item nav-link disabled" href="#">LinkedIn</a>
+      <a class="nav-item nav-link disabled" href="#">Github</a>
+    -->
+    </div>
+  </div>
+</nav>
 
-		<div class="container-fluid">
+
+  <!-- Header-->
+<header class="masthead">
+	<div class="container h-100">
+		<div class="row h-100 align-items-center">
+			<div class="col-12 text-center text-light">
+				<h1 class="font-weight-light">Learning to be a better developer</h1>
+				<div class="masthead-subtitle" style="opacity: 0.7;">
+					<p class="lead">Student</p>
+					<hr style="background: #FFF; width: 7rem;">
+					<p class="lead">Web Designer</p>
+					<hr style="background: #FFF; width: 12rem;">
+					<p class="lead">Developer</p>
+					<hr style="background: #FFF; width: 7rem;">
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- About -->
+<section id="about" class="about">
+	<div class="highlight-about">
+		<div class="container">
 			<div class="row">
-	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Jacob Helton</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link" href="/portfolio/#home">Home<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/portfolio/#about">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="/portfolio/#resume">Resume</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/portfolio/#projects">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Contact</a>
-				</li>
-			</ul>
+				<div class="col-md-8 intro">
+					<!-- <div class="intro"> -->
+						<h2>Hi, I'm Jacob.</h2>
+						<p>I am a junior at VCU studying to receive my Bachelor's Degree in Computer Science.
+						In my free time, I enjoy developing my own personal projects, crafting with my fiancee, Ashley, and spending time with her dogs.</p>
+
+						<p>In my junior year of high school, I decided to take an Oracle class. This is where I first started learning to code and really developed a passion for it.
+							This class landed me two internships and taught me invaluable lessons in programming, professionalism, and independent learning.
+							Since then, I have continued feeding my insatiable appetite for programming.</p>
+						<!-- <p>One day, I'd love to create my own blog. If I ever do, I'll likely link it here and toss is under projects as well.</p>
+						<a class="btn btn-primary" role="button" href="#">Read Blog</a> -->
+						<p>I hope you enjoy the site.</p>
+						<p>-Jacob</p>
+					<!-- </div> -->
+				</div>
+				<div class="col-sm-4 image">
+					<img src="/Portfolio/img/jacob-az.jpg" alt="" width="100%" style="border-radius: 50%;">
+				</div>
+			</div>
 		</div>
-	</nav>
+	</div>
+
+</section>
+
+<!-- Projects -->
+<section id="projects" class="projects">
+	<div class="projects-clean">
+		<div class="container">
+			<div class="intro">
+				<h2 class="text-center">Projects</h2>
+				<p class="text-center">Creating projects is one of the best ways to learn. Here are a few of the projects I've completed over the years.</p>
+			</div>
+			<div class="row projects justify-content-center">
+				
+				<div class="col-sm-6 col-lg-4 item">
+					<img class="img-fluid" src="/Portfolio/img/static-blog.png" alt="">
+					<h3 class="name">Static Blog</h3>
+					<div class="description"><p>This blog was made using the Jekyll Static Site Generator. By creating my own custom HTML theme, I was able to generate a simple blog with a home page, blog posts, and a recent posts widget in the sidebar.</p>
 </div>
-
-			<!-- <div class="container"> -->
-<section id="home">
-		<div class="jumbotron introduction">
-			<h1 class="display-4">Student</h1>
-			<hr>
-			<h1 class="display-4">Web Designer</h1>
-			<hr>
-			<h1 class="display-4">Developer</h1>
-		</div>
-</section>
-	<section id="about">
-	<div class="row bio">
-		<div class="col-sm-5">
-			<img src="/portfolio/img/jacob-profile.png" width="80%" style="border-radius:50%;">
-		</div>
-		<div class="col-sm-7">
-			<h3>About Me</h3>
-			<p>I am currently finishing my Associate's Degree in General Studies with a concentration in Computer Sciencea at John Tyler Community College. I am planning on transferring into VCU's college of Engineering to complete a bachelor's degree in Computer Science. As of now, my programming experience varies from having numerous web development projects under my belt to having done light databasing and learning Java. Regardless of the have enjoyed gaining experience in all of the areas of software development that I have encountered.</p>
-			<p>My love for computer science started in my junior year of high school when I decided to take a class in Oracle Databasing at the Chesterfield Career & Technical Center. There I was introduced to SQL, HTML, and CSS. My love for programming started there and has only continued into my college and adult life. As a result of in-class interviews while still in high-school, I have had the wonderful opportunity to serve IT internships at the Science Museum of Virginia as well as Allen & Allen.</p>
-		</div>
+				</div>
+				
+				<div class="col-sm-6 col-lg-4 item">
+					<img class="img-fluid" src="/Portfolio/img/maxx-mockup.png" alt="">
+					<h3 class="name">Maxx Mockup</h3>
+					<div class="description"><p>This was a challenge to recreate a webpage with only an image of the page we were to recreate. I completed this challenge as part of Maxx Potential’s <a href="https://maxxpotential.com/apprentice/">Career Lab</a> hiring process. Here is my rendition.</p>
+</div>
+				</div>
+				
+				<div class="col-sm-6 col-lg-4 item">
+					<img class="img-fluid" src="/Portfolio/img/for-all-paws.png" alt="">
+					<h3 class="name">For All Paws</h3>
+					<div class="description"><p>As part of my Oracle class, we were required to make a website and database for an animal shelter. I was the lead on the website in a group of 3. Website features an animal type filter I created in JavaScript.</p>
+</div>
+				</div>
+				
+				<div class="col-sm-6 col-lg-4 item">
+					<img class="img-fluid" src="/Portfolio/img/350x230.png" alt="">
+					<h3 class="name">Project Name</h3>
+					<div class="description"><p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id. Praesent aliquam in tellus eu gravida.</p>
+</div>
+				</div>
+				
+				<div class="col-sm-6 col-lg-4 item">
+					<img class="img-fluid" src="/Portfolio/img/350x230.png" alt="">
+					<h3 class="name">Project Name</h3>
+					<div class="description"><p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id. Praesent aliquam in tellus eu gravida.</p>
+</div>
+				</div>
+				
+				<div class="col-sm-6 col-lg-4 item">
+					<img class="img-fluid" src="/Portfolio/img/350x230.png" alt="">
+					<h3 class="name">Project Name</h3>
+					<div class="description"><p>Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id. Praesent aliquam in tellus eu gravida.</p>
+</div>
+				</div>
+				
+			</div>
 	</div>
 </section>
-	<section id="resume">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-2">
-				<h4><u>Objective</u></h4>
-			</div>
-			<div class="col-sm-10">
-				<p>Motivated professional with experience in both IT and development hoping to apply and expand my skills in the workforce. Seeking a work environment that encourages learning through collaboration and hands-on problem solving.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2">
-				<h4><u>Experience</u></h4>
-			</div>
-			<div class="col-sm-10">
-				<h5>Allen, Allen Allen, & Allen</h5>
-				<h6>IT Intern (January 2017-Present)</h6>
-				<ul>
-					<li>Provide Helpdesk support and training to users</li>
-					<li>Manage domain objects via Active Directory Users and Computers</li>
-					<li>Maintain and support Citrix VDI environments via Citrix Director</li>
-					<li>Configure, deploy, track, and maintain desktop computers via Microsoft Deployment Toolkit and other tools</li>
-				</ul>
-				<p></p>
-				<h5>Chick fil-A</h5>
-				<h6>Front Side Team Member (August 2016 – February 2017)</h6>
-				<ul>
-					<li>Tendered transactions, maintained equipment and dining room</li>
-					<li>Delivered superior customer service</li>
-					<li>Trained new hires</li>
-				</ul>
-				<p></p>
-				<h5>Science Museum of Virginia</h5>
-				<h6>IT Intern (January 2016-May 2016</h6>
-				<ul>
-					<li>Decommissioned, reformatted, and set up desktop computers</li>
-					<li>Light maintenance on network switches and servers</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2">
-				<h4><u>Education</u></h4>
-			</div>
-			<div class="col-sm-10">
-				<h5>John Tyler Community College (2017-Present)</h5>
-				<ul>
-					<li>Associates of Science in General Studies – anticipated in May 2019</li>
-					<ul><li>Computer Science Specialization</li></ul>
-				</ul>
-				<h5>Chesterfield Career & Technical Center (2015-2017)</h5>
-				<ul><li>Oracle - Database Design & Programming in SQL & PL/SQL</li></ul>
-				<h5>Thomas Dale High School (2013-2017)</h5>
-				<ul><li>Advanced diploma</li></ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2">
-				<h4><u>Skills</u></h4>
-			</div>
-			<div class="col-sm-10">
-				<ul>
-					
-					<li><a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=132&cvid=MA+JjKoRohbca6OvwfSssQ==" target="_blank">MTA Database Administration Fundamentals Certified</a></li>
-					<li><a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=186&cvid=af20+uCoBsl0S6DVpoD1xg==" target="_blank">IC3 GS4 Digital Literacy Certified</a></li>
-					<li><a href="https://drive.google.com/open?id=1DUZjRY7KvjLTOaibtlDJYi0p0zPpKRxv" target="_blank">CIW Site Development Associate Certified</a></li>
-					<li>Proficient in SQL, PL/SQL, HTML/CSS – Novice in PowerShell and Java</li>
-					<li>Experienced in end-user support on Windows 7-10, Mac OS X, and iOS devices</li>
-				</ul>
-			</div>
-		</div>
-		<!--
-		<div clas="col-sm-8">
-			<h2>Jacob Helton</h2>
-			<h5 class="text-uppercase">(804) 592-7893 | jacobhelton57@gmail.com</h5>
-			<p></p>
-			<h4><u>Objective</u></h4>
-			<p>Motivated professional with experience in both IT and development hoping to apply and expand my skills in the workforce. Seeking a work environment that encourages learning through collaboration and hands-on problem solving.</p>
-			<p></p>
-			<h4><u>Work Experience</u></h4>
-			<h5>Allen, Allen Allen, & Allen</h5>
-			<h6>IT Intern (January 2017-Present)</h6>
-			<ul>
-				<li>Provide Helpdesk support and training to users</li>
-				<li>Manage domain objects via Active Directory Users and Computers</li>
-				<li>Maintain and support Citrix VDI environments via Citrix Director</li>
-				<li>Configure, deploy, track, and maintain desktop computers via Microsoft Deployment Toolkit and other tools</li>
-			</ul>
-			<p></p>
-			<h5>Chick fil-A</h5>
-			<h6>Front Side Team Member (August 2016 – February 2017)</h6>
-			<ul>
-				<li>Tendered transactions, maintained equipment and dining room</li>
-				<li>Delivered superior customer service</li>
-				<li>Trained new hires</li>
-			</ul>
-			<p></p>
-			<h5>Science Museum of Virginia</h5>
-			<h6>IT Intern (January 2016-May 2016</h6>
-			<ul>
-				<li>Decommissioned, reformatted, and set up desktop computers</li>
-				<li>Light maintenance on network switches and servers</li>
-			</ul>
-			<p></p>
-			<h4><u>Education</u></h4>
-			<h5>John Tyler Community College (2017-Present)</h5>
-			<ul>
-				<li>Associates of Science in General Studies – anticipated in May 2019</li>
-				<ul><li>Computer Science Specialization</li></ul>
-			</ul>
-			<h5>Chesterfield Career & Technical Center (2015-2017)</h5>
-			<ul><li>Oracle - Database Design & Programming in SQL & PL/SQL</li></ul>
-			<h5>Thomas Dale High School (2013-2017)</h5>
-			<ul><li>Advanced diploma</li></ul>
-			<h4><u>Skills and Certifications</u></h4>
-			<ul>
-				<li><a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=132&cvid=MA+JjKoRohbca6OvwfSssQ==" target="_blank">MTA Database Administration Fundamentals Certified</a></li>
-				<li><a href="https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=186&cvid=af20+uCoBsl0S6DVpoD1xg==" target="_blank">IC3 GS4 Digital Literacy Certified</a></li>
-				<li><a href="https://drive.google.com/open?id=1DUZjRY7KvjLTOaibtlDJYi0p0zPpKRxv" target="_blank">CIW Site Development Associate Certified</a></li>
-				<li>Proficient in SQL, PL/SQL, HTML/CSS – Novice in PowerShell and Java</li>
-				<li>Experienced in end-user support on Windows 7-10, Mac OS X, and iOS devices</li>
-			</ul>
-		</div>
-		<div clas="col"></div>
-	-->
-	</div>
-	</div>
-</section>
-	<!-- ##Ideas
-	
-	-In addition to the cards being dynamically served by the contents of the directory, each project page (or modal...?) would also be pulling information from a combination of default template and markdown or lightweight html
 
-	-Each project page would include link to external page as well as links to github repository
+<!-- Resume -->
+<section id="resume" class="resume">
+	<div class="resume">
 
--->
-<section id="projects">
-	<div class="row">
-		<div class="col"></div>
-		<div class="col-sm-8 section-title">
-			<h1 class="display-4">Projects</h1>
-			<hr>
-		</div>
-		<div class="col"></div>
-	</div>
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="card-columns">
-				
-					<div class="card">
-						<img class="card-img-top img-fluid" src="img/projects/Mockup.png" width="100%">
-						<div class="card-img-overlay">
-							<h4 class="card-title" style="color:#76323F;">Maxx Potential Mockup</h4>
-							<h5 class="card-subtitle mb-2 text-muted">November 2018</h5>
-							<a href="/portfolio/projects/2018/11/01/Maxx-Mockup.html" class="btn btn-primary">Details</a>
-						</div>
-					</div>		
-				
-					<div class="card">
-						<img class="card-img-top img-fluid" src="img/projects/JTCCPC.png" width="100%">
-						<div class="card-img-overlay">
-							<h4 class="card-title" style="color:#76323F;">JTCC Programming Club</h4>
-							<h5 class="card-subtitle mb-2 text-muted">December 2017</h5>
-							<a href="/portfolio/projects/2018/09/17/JTCC-Programming-Club.html" class="btn btn-primary">Details</a>
-						</div>
-					</div>		
-				
-					<div class="card">
-						<img class="card-img-top img-fluid" src="img/projects/Summit.png" width="100%">
-						<div class="card-img-overlay">
-							<h4 class="card-title" style="color:#76323F;">Jump Summit Trampoline Park</h4>
-							<h5 class="card-subtitle mb-2 text-muted">April 2017</h5>
-							<a href="/portfolio/projects/2017/04/01/Jump-Summit.html" class="btn btn-primary">Details</a>
-						</div>
-					</div>		
-				
-					<div class="card">
-						<img class="card-img-top img-fluid" src="img/projects/Shelter.png" width="100%">
-						<div class="card-img-overlay">
-							<h4 class="card-title" style="color:#76323F;">For All Paws Animal Shelter</h4>
-							<h5 class="card-subtitle mb-2 text-muted">November 2016</h5>
-							<a href="/portfolio/projects/2016/09/17/For-All-Paws.html" class="btn btn-primary">Details</a>
-						</div>
-					</div>		
-				
-					<div class="card">
-						<img class="card-img-top img-fluid" src="img/projects/Nicole.png" width="100%">
-						<div class="card-img-overlay">
-							<h4 class="card-title" style="color:#76323F;">Nicole's Daydream Photography</h4>
-							<h5 class="card-subtitle mb-2 text-muted">April 2016</h5>
-							<a href="/portfolio/projects/2016/05/01/Nicoles-Daydream-Photography.html" class="btn btn-primary">Details</a>
-						</div>
-					</div>		
-				
-					<div class="card">
-						<img class="card-img-top img-fluid" src="img/projects/2016champs.png" width="100%">
-						<div class="card-img-overlay">
-							<h4 class="card-title" style="color:#76323F;">BCS Bowls 2016 National Championship</h4>
-							<h5 class="card-subtitle mb-2 text-muted">December 2015</h5>
-							<a href="/portfolio/projects/2015/12/01/BCS-National-Champs.html" class="btn btn-primary">Details</a>
-						</div>
-					</div>		
-				
-			</div>
-		</div>
 	</div>
 </section>
 
 
 
-<!-- </div> -->
-
-		</div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

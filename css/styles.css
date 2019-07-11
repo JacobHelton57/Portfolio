@@ -1,0 +1,41 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  /* background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+	background: linear-gradient(to top right, #141e30 0%, #243b55 60%);
+}
+
+.projects-clean {
+	padding: 5em 0em;
+	background: linear-gradient(to top right, #141e30 0%, #243b55 60%);
+	color: #FFF;
+}
+
+.projects .item {
+	padding-top: 1.5em;
+}
+
+.projects .name {
+	padding-top: 0.5em;
+}
+
+.projects .item .description {
+	height: 8em;
+}
+
+.projects a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.highlight-about {
+	padding: 2.5em 0;
+}
+
+.highlight-about .intro, .highlight-about .image {
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
+}

@@ -1,3 +1,4 @@
 markdown: kramdown
 baseurl: /Portfolio
+permalink: pretty
 exclude: ['README.md']

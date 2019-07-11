@@ -1,10 +1,9 @@
 ---
-layout: default
-title: For All Paws Animal Shelter
-subtitle : November 2016
-description: Group project that I lead. Two other classmates and I developed a webpage for a mock animal shelter that we had to create.
+title: For All Paws
+repo: https://github.com/JacobHelton57/For-All-Paws
+demo: https://jacobhelton57.github.io/For-All-Paws/
 category: projects
-image: Shelter.png
+image: for-all-paws.png
 ---
 
-# For All Paws Animal Shelter
+As part of my Oracle class, we were required to make a website and database for an animal shelter. I was the lead on the website in a group of 3. Website features an animal type filter I created in JavaScript.

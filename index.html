@@ -2,17 +2,77 @@
 layout: default
 ---
 
-<!-- <div class="container"> -->
-<section id="home">
-		<div class="jumbotron introduction">
-			<h1 class="display-4">Student</h1>
-			<hr>
-			<h1 class="display-4">Web Designer</h1>
-			<hr>
-			<h1 class="display-4">Developer</h1>
+<!-- Header-->
+<header class="masthead">
+	<div class="container h-100">
+		<div class="row h-100 align-items-center">
+			<div class="col-12 text-center text-light">
+				<h1 class="font-weight-light">Learning to be a better developer</h1>
+				<div class="masthead-subtitle" style="opacity: 0.7;">
+					<p class="lead">Student</p>
+					<hr style="background: #FFF; width: 7rem;">
+					<p class="lead">Web Designer</p>
+					<hr style="background: #FFF; width: 12rem;">
+					<p class="lead">Developer</p>
+					<hr style="background: #FFF; width: 7rem;">
+				</div>
+			</div>
 		</div>
+	</div>
+</header>
+
+<!-- About -->
+<section id="about" class="about">
+	<div class="highlight-about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 intro">
+					<!-- <div class="intro"> -->
+						<h2>Hi, I'm Jacob.</h2>
+						<p>I am a junior at VCU studying to receive my Bachelor's Degree in Computer Science.
+						In my free time, I enjoy developing my own personal projects, crafting with my fiancee, Ashley, and spending time with her dogs.</p>
+
+						<p>In my junior year of high school, I decided to take an Oracle class. This is where I first started learning to code and really developed a passion for it.
+							This class landed me two internships and taught me invaluable lessons in programming, professionalism, and independent learning.
+							Since then, I have continued feeding my insatiable appetite for programming.</p>
+						<!-- <p>One day, I'd love to create my own blog. If I ever do, I'll likely link it here and toss is under projects as well.</p>
+						<a class="btn btn-primary" role="button" href="#">Read Blog</a> -->
+						<p>I hope you enjoy the site.</p>
+						<p>-Jacob</p>
+					<!-- </div> -->
+				</div>
+				<div class="col-sm-4 image">
+					<img src="{{site.baseurl}}/img/jacob-az.jpg" alt="" width="100%" style="border-radius: 50%;">
+				</div>
+			</div>
+		</div>
+	</div>
+
 </section>
-	{% include about.html %}
-	{% include resume.html %}
-	{% include projects.html %}
-<!-- </div> -->
+
+<!-- Projects -->
+<section id="projects" class="projects">
+	<div class="projects-clean">
+		<div class="container">
+			<div class="intro">
+				<h2 class="text-center">Projects</h2>
+				<p class="text-center">Creating projects is one of the best ways to learn. Here are a few of the projects I've completed over the years.</p>
+			</div>
+			<div class="row projects justify-content-center">
+				{% for project in site.categories.projects %}
+				<div class="col-sm-6 col-lg-4 item">
+					<img class="img-fluid" src="{{ site.baseurl }}/img/{{ project.image }}" alt="">
+					<h3 class="name">{{ project.title }}</h3>
+					<div class="description">{{ project.excerpt }}</div>
+				</div>
+				{% endfor %}
+			</div>
+	</div>
+</section>
+
+<!-- Resume -->
+<section id="resume" class="resume">
+	<div class="resume">
+
+	</div>
+</section>
