@@ -242,9 +242,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages
-  jekyll (~> 3.8.3)
-  tzinfo-data
+  github-pages (~> 198)
+  jekyll (~> 3.8.5)
+  liquid (~> 4.0.0)
 
 BUNDLED WITH
    1.16.4
