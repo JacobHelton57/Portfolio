@@ -5,9 +5,11 @@ source "https://rubygems.org"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 
+gem "jekyll", "~> 3.8.3"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'jekyll-octicons'
+  gem "github-pages"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

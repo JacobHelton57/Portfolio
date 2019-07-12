@@ -22,4 +22,4 @@ defaults:
       category: "projects"
       banner_image: "350x230.png"
 plugins:
-  - jekyll-octicons
+  - github-pages
