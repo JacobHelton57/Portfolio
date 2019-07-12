@@ -1,17 +1,52 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="collapse navbar-collapse">
+<nav class="navbar bg-dark fixed-top navbar-expand-lg navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- <ion-icon name="code" class="text-light" style="font-size: 1.5em;"></ion-icon> -->
+  <a class="navbar-brand" href="{{site.baseurl}}/">
+    <!-- <svg id="i-code" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
+    </svg> -->
+    <!-- <ion-icon name="code" class="text-light" style="font-size: 1.5em;"></ion-icon> -->
+    Jacob Helton
+  </a>
+  <div class="collapse navbar-collapse" id="navbarToggler">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#about">About</a>
-      <a class="nav-item nav-link" href="#projects">Projects</a>
-      <a class="nav-item nav-link" href="#">Resume</a>
-      <a class="nav-item nav-link disabled" href="#">Contact</a>
-      <!--
-      Add some icons for Github and LinkedIn here - float them to the right
+      <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse">
+        <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+        <a class="nav-link" href="{{ site.baseurl }}/#about">About</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+        <a class="nav-link" href="{{ site.baseurl }}/#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/JacobHelton57/" target="_blank">
+          <ion-icon name="logo-github" style="font-size: 1.3em;">
+          </ion-icon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/jacob-helton-300b02172" target="_blank">
+          <ion-icon name="logo-linkedin" style="font-size: 1.3em;">
+          </ion-icon>
+        </a>
+      </li>
+      <!-- Add some icons for Github and LinkedIn here - float them to the right
+
       <a class="nav-item nav-link disabled" href="#">LinkedIn</a>
-      <a class="nav-item nav-link disabled" href="#">Github</a>
-    -->
+      <a class="nav-item nav-link disabled" href="#">Github</a> -->
+
     </div>
+
+
   </div>
 </nav>

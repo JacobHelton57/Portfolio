@@ -2,3 +2,24 @@ markdown: kramdown
 baseurl: /Portfolio
 permalink: pretty
 exclude: ['README.md']
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      category: "projects"
+      banner_image: "350x230.png"
+plugins:
+  - jekyll-octicons

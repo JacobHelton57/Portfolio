@@ -1,9 +1,10 @@
 ---
 layout: default
+title: Portfolio
 ---
 
 <!-- Header-->
-<header class="masthead">
+<header class="masthead"> <!-- style="background-image: url('https://ui-ex.com/images/transparent-triangle-texture-4.png');" -->
 	<div class="container h-100">
 		<div class="row h-100 align-items-center">
 			<div class="col-12 text-center text-light">
@@ -22,7 +23,7 @@ layout: default
 </header>
 
 <!-- About -->
-<section id="about" class="about">
+<section id="about" class="about" style="background: #FFF;"> <!-- -->
 	<div class="highlight-about">
 		<div class="container">
 			<div class="row">
@@ -51,7 +52,7 @@ layout: default
 </section>
 
 <!-- Projects -->
-<section id="projects" class="projects">
+<section id="projects" class="projects"> <!-- style="background-image: url('https://ui-ex.com/images/transparent-triangle-texture-4.png');" -->
 	<div class="projects-clean">
 		<div class="container">
 			<div class="intro">
@@ -59,9 +60,12 @@ layout: default
 				<p class="text-center">Creating projects is one of the best ways to learn. Here are a few of the projects I've completed over the years.</p>
 			</div>
 			<div class="row projects justify-content-center">
-				{% for project in site.categories.projects %}
+				{% assign projects = site.projects | sort: 'name'| reverse %}
+				{% for project in projects %}
 				<div class="col-sm-6 col-lg-4 item">
+					<a href="{{ site.baseurl }}{{ project.url }}">
 					<img class="img-fluid" src="{{ site.baseurl }}/img/{{ project.image }}" alt="">
+					</a>
 					<h3 class="name">{{ project.title }}</h3>
 					<div class="description">{{ project.excerpt }}</div>
 				</div>

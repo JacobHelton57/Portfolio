@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+
+
+<header class="project-masthead" style="background-image: url('https://ui-ex.com/images/transparent-triangle-texture-4.png');">
+	<div class=" container h-100 banner-image">
+		<div class="foggy-background h-100 align-items-center">
+
+			<div class="row h-100 align-items-center">
+				<div class="col-12 text-light">
+					<h1 class="font-weight-light">{{page.title}}</h1>
+					<div class="col-sm-9" style="padding:0;">
+						<h3 class="lead">{{ page.excerpt }}</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="post" style="background: #FFF;">
+	<div class="container">
+		<div class="row" style="padding: 1em 0em;">
+			<div class="col-sm-12">
+				<a href="{{ site.baseurl }}/#projects">Projects</a> > <a href="{{site.baseurl}}/{{page.url}}">{{page.title}}</a>
+			</div>
+			<div class="col-sm-9">
+				<div class="banner-image" style="padding: 1em 0em; height: 90vh;">
+					<!-- <h1 class="font-weight-light">{{ page.title }}</h1> -->
+					<!-- <h3 class="lead">{{ page.excerpt }}</h3> -->
+					<img src="{{ site.baseurl }}/img/{{ page.image }}" alt="" width="90%">
+					<p>
+						{{content}}
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<h2>Header</h2>
+				<a class="btn btn-primary" role="button" href="#">Repository</a>
+				<a class="btn btn-primary" role="button" href="#">Demo</a>
+				<h3>Tags/Tech:</h3>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Jekyll</li>
+					<li>Liquid</li>
+					<li>Markdown</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

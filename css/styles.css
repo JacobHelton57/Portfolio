@@ -1,16 +1,46 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-repeat: no-repeat;
+  background: linear-gradient(to top right, #36d1dc 0%, #5b86e5 80%) fixed;
+}
+
+.texture {
+  width: 100%;
+	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
+	background: url('https://ui-ex.com/images/transparent-triangle-texture-4.png');
+	opacity: 0.6;
+	z-index: -100;
+}
+
+.content {
+  padding: 56px 0 0 0;
+}
+/* Home Page */
+
 .masthead {
   height: 100vh;
   min-height: 500px;
-  /* background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080'); */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-	background: linear-gradient(to top right, #141e30 0%, #243b55 60%);
+}
+
+/* Navigation */
+
+
+/* Projects */
+
+.project-masthead {
+  height: 20vh;
+  min-height: 300px;
 }
 
 .projects-clean {
 	padding: 5em 0em;
-	background: linear-gradient(to top right, #141e30 0%, #243b55 60%);
+	/* background: linear-gradient(to top right, #141e30 0%, #243b55 60%); */
+  /* background: linear-gradient(to top right, #36d1dc 0%, #5b86e5 60%); */
 	color: #FFF;
 }
 
