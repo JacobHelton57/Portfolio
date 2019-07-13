@@ -43,7 +43,7 @@ title: Portfolio
 					<!-- </div> -->
 				</div>
 				<div class="col-sm-4 image">
-					<img src="{{site.baseurl}}/img/jacob-az.jpg" alt="" width="100%" style="border-radius: 50%;">
+					<img src="{{site.baseurl}}/img/jacob.jpg" alt="" width="100%" style="border-radius: 50%;">
 				</div>
 			</div>
 		</div>
@@ -62,12 +62,21 @@ title: Portfolio
 			<div class="row projects justify-content-center">
 				{% assign projects = site.projects | sort: 'name'| reverse %}
 				{% for project in projects %}
-				<div class="col-sm-6 col-lg-4 item">
+				<!-- <div class="col-sm-6 col-lg-4 item">
 					<a href="{{ site.baseurl }}{{ project.url }}">
 					<img class="img-fluid" src="{{ site.baseurl }}/img/{{ project.image }}" alt="">
 					</a>
 					<h3 class="name">{{ project.title }}</h3>
 					<div class="description">{{ project.excerpt }}</div>
+				</div> -->
+				<div class="col-sm-6 col-lg-4 item">
+					<div class="card">
+						<img class="img-fluid card-img-top" src="{{ site.baseurl }}/img/{{ project.image }}" alt="">
+					  <div class="card-body text-dark">
+							<h5 class="card-title">{{ project.title }}</h5>
+					    <p class="card-text">{{ project.excerpt }}</p>
+					  </div>
+					</div>
 				</div>
 				{% endfor %}
 			</div>
