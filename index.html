@@ -3,12 +3,18 @@ layout: default
 title: Portfolio
 ---
 
+<!-- Note: Change name to right side of navbar and keep name on right in mobile
+	Add Resume
+	Instead of contact form in flow of UI, make it a modal
+	Sidebar in projects page will look fine as a card
+-->
+
 <!-- Header-->
 <header class="masthead">
 	<div class="container h-100">
 		<div class="row h-100 align-items-center">
 			<div class="col-12 text-center text-light">
-				<h1 class="font-weight-light">Learning to be a better developer</h1>
+				<h1 class="font-weight-light">Learning to be a better developer</h1> <!-- Note: Find a different tagline -->
 				<div class="masthead-subtitle" style="opacity: 0.7;">
 					<p class="lead">Student</p>
 					<hr style="background: #FFF; width: 7rem;">
@@ -23,7 +29,7 @@ title: Portfolio
 </header>
 
 <!-- About -->
-<section id="about" class="about" style="background: #FFF;">
+<section id="about" class="about">
 	<div class="highlight-about">
 		<div class="container">
 			<div class="row">
@@ -52,24 +58,31 @@ title: Portfolio
 </section>
 
 <!-- Projects -->
-<section id="projects" class="projects"> <!-- style="background-image: url('https://ui-ex.com/images/transparent-triangle-texture-4.png');" -->
-	<div class="projects-clean">
+<section id="projects" class="projects">
+	<div class="projects-clean text-light">
 		<div class="container">
 			<div class="intro">
-				<h2 class="text-center">Projects</h2>
-				<p class="text-center">Creating projects is one of the best ways to learn. Here are a few of the projects I've completed over the years.</p>
+				<h1 class="text-center">Projects</h1>
+				<!-- <p class="text-center">Creating projects is one of the best ways to learn. Here are a few of the projects I've completed over the years.</p> -->
 			</div>
 			<div class="row projects justify-content-center">
+				<!-- Note: Create cleaner images for each project instead of using screenshots -->
 				{% assign projects = site.projects | sort: 'name'| reverse %}
 				{% for project in projects %}
-				<!-- <div class="col-sm-6 col-lg-4 item">
+				<div class="col-sm-6 col-lg-4 item">
 					<a href="{{ site.baseurl }}{{ project.url }}">
 					<img class="img-fluid" src="{{ site.baseurl }}/img/{{ project.image }}" alt="">
-					</a>
 					<h3 class="name">{{ project.title }}</h3>
+					</a>
+
 					<div class="description">{{ project.excerpt }}</div>
-				</div> -->
-				<div class="col-sm-6 col-lg-4 item">
+				</div>
+
+				<!-- Note: Remove excerpt and add read more button instead
+				Not sure if button will look better inside picture or below title
+				-->
+
+				<!-- <div class="col-sm-6 col-lg-4 item">
 					<div class="card">
 						<img class="img-fluid card-img-top" src="{{ site.baseurl }}/img/{{ project.image }}" alt="">
 					  <div class="card-body text-dark">
@@ -77,7 +90,7 @@ title: Portfolio
 					    <p class="card-text">{{ project.excerpt }}</p>
 					  </div>
 					</div>
-				</div>
+				</div> -->
 				{% endfor %}
 			</div>
 	</div>
@@ -85,7 +98,70 @@ title: Portfolio
 
 <!-- Resume -->
 <section id="resume" class="resume">
-	<div class="resume">
+	<div class="container-fluid resume-clean py-5">
+		<div class="intro">
+			<h1 class="text-center">Resume</h1>
+			<!-- <p class="text-center">Creating projects is one of the best ways to learn. Here are a few of the projects I've completed over the years.</p> -->
+		</div>
+		<dl class="row" style="padding-top:1.5em;">
+
+	<dt class="col-sm-3"><h2><u>Experience</u></h2></dt>
+	<dd class="col-sm-7">
+		{% for job in site.data.resume.experience %}
+		<div class="resume-item" style="border-left: 1px solid #DDD; padding-left: 1em;">
+			<h4>{{ job.company }}</h4>
+			<h5 class="text-muted">{{ job.title }} |<small class="text-muted"> {{ job.timeframe }}</small></h5>
+			{{ job.description }}
+			<ul>
+				{% for point in job.points %}
+					<li>{{ point }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+		{% endfor %}
+	</dd>
+
+	<span class="col-sm-11" style="margin-bottom: 1em;"><hr></span>
+
+	<dt class="col-sm-3"><h2><u>Education</u></h2></dt>
+	<dd class="col-sm-7">
+		{% for institute in site.data.resume.education %}
+		<div class="resume-item" style="border-left: 1px solid #DDD; padding-left: 1em; padding-top: 1em;">
+			<h4> Test {{ institute.title }}</h4>
+			<h5 class="text-muted">{{ institute.credential }} |<small class="text-muted"> {{ institute.timeframe }}</small></h5>
+			<p>{{institute.description}}</p>
+		</div>
+		{% endfor %}
+	</dd>
+
+	<span class="col-sm-11" style="margin-bottom: 1em;"><hr></span>
+
+	<dt class="col-sm-3"><h2><u>Skills</u></h2></dt>
+	<dd class="col-sm-7">
+		<div class="resume-item" style="border-left: 1px solid #DDD; padding-left: 1em; padding-top: 1em;">
+			<div class="row">
+				{% for event in site.data.resume.timeline %}
+					<div class="col-4 col-md-3 align-self-end pb-1 mb-1">
+						<p class="mb-1">{{event.time}}</p>
+					</div>
+
+					<div class="col-8 col-md-9 " style="border-left: 1px solid #DDD;">
+						{% for skill in event.skills %}
+							<p class="">{{skill}}</p>
+						{% endfor %}
+					</div>
+					<div class="col-4 col-md-3 px-0 pt-0 pb-3">
+						<hr class="m-0">
+					</div>
+					<div class="col-8 col-md-9" style="border-left: 1px solid #DDD;">
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</dd>
+
+
+</dl>
 
 	</div>
 </section>

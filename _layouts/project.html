@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+
+<!--
+	Try projects breadcrumb in bottom left corner of header
+
+
+-->
 <header class="project-masthead">
 	<div class=" container h-100 banner-image">
 		<div class="foggy-background h-100 align-items-center">
@@ -19,24 +25,57 @@ layout: default
 
 <section class="post" style="background: #FFF;">
 	<div class="container">
-		<div class="row" style="padding: 1em 0em;">
-			<div class="col-sm-12">
-				<a href="{{ site.baseurl }}/#projects">Projects</a> > <a href="{{site.baseurl}}/{{page.url}}">{{page.title}}</a>
-			</div>
-			<div class="col-sm-9">
-				<div class="banner-image" style="padding: 1em 0em;">
+		<div class="row" style="padding: 2em 0em;">
+
+			<div class="col-md-9">
+
 					<!-- <h1 class="font-weight-light">{{ page.title }}</h1> -->
 					<!-- <h3 class="lead">{{ page.excerpt }}</h3> -->
 					<img src="{{ site.baseurl }}/img/{{ page.image }}" alt="" width="100%">
 					<p>
 						{{content}}
 					</p>
-				</div>
+
 			</div>
-			<div class="col-sm-3">
-				<h2>Header</h2>
-				<a class="btn btn-primary" role="button" href="#">Repository</a>
-				<a class="btn btn-primary" role="button" href="#">Demo</a>
+			<div class="col-md-3">
+				<div class="card">
+				  <div class="card-body">
+				    <!-- <h3 class="card-title">Card title</h3> -->
+
+				    <p class="card-text">
+							<a class="btn btn-primary" role="button" href="{{ page.repo }}" target="_blank" style="width:100%; background: #5D89C7; border: #5D89C7;">View on Github</a>
+						</p>
+						<hr>
+						<p class="card-text">
+							<a class="btn btn-primary" role="button" href="{{ page.demo }}" target="_blank" style="width:100%; background: #5D89C7; border: #5D89C7;">Preview</a>
+						</p>
+				  </div>
+
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item">
+							<h5 class="card-title">Tags</h5>
+							<hr>
+							<ul class="list-unstyled ml-3">
+								<div class="row">
+									{% for tag in page.tags %}
+									<div class="col-6 pt-1">
+										<li>
+											<a href="#">{{tag}}</a>
+										</li>
+									</div>
+									{% endfor %}
+								</div>
+							</ul>
+						</li>
+
+				    <li class="list-group-item">
+							Created {{ page.date | date: "%B %Y"}}
+						</li>
+				  </ul>
+				</div>
+
+				<!-- <h2>Header</h2>
+
 				<h3>Tags/Tech:</h3>
 				<ul>
 					<li>HTML</li>
@@ -44,7 +83,7 @@ layout: default
 					<li>Jekyll</li>
 					<li>Liquid</li>
 					<li>Markdown</li>
-				</ul>
+				</ul> -->
 			</div>
 		</div>
 	</div>
