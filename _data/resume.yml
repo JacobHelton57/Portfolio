@@ -1,4 +1,5 @@
 experience :
+
   - company: Maxx Potential
     title: Apprentice
     timeframe: March 2019 - Present
@@ -15,7 +16,7 @@ experience :
     description:
     points:
       - Provide Helpdesk support and training to users
-      - Manage domain objects via Active Directory Users and Computers
+      - Manage users, assets, and security groups via Active Directory
       - Maintain and support Citrix VDI environments via Citrix Director
       - Configure, deploy, track and maintain desktop computers via Microsoft Deployment Toolkit and other tools
 
@@ -35,6 +36,7 @@ experience :
       - Decommissioned, reformatted, and set up desktop computers
       - Light maintenance on network switches and servers
 
+
 education:
   - title: John Tyler Community College
     credential: Associates of Science in General Studies
@@ -45,7 +47,9 @@ education:
     credential: Advanced Diploma
     timeframe: 2017
 
+
 timeline:
+
   - time: September 2015
     skills:
       - SQL
@@ -65,3 +69,18 @@ timeline:
     skills:
       - Swift
       - PHP
+
+
+accomplishments:
+
+  - title: CIW Site Development Associate Certified
+    url: https://drive.google.com/open?id=1DUZjRY7KvjLTOaibtlDJYi0p0zPpKRxv
+    time: May 26, 2017
+
+  - title: MTA Database Administration Fundamentals
+    url: https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=132&cvid=MA+JjKoRohbca6OvwfSssQ==
+    time: May 26, 2017
+
+  - title: IC3 GS4 Digital Literacy Certified
+    url: https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=186&cvid=af20+uCoBsl0S6DVpoD1xg==
+    time: May 12, 2017

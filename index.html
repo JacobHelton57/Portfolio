@@ -98,70 +98,81 @@ title: Portfolio
 
 <!-- Resume -->
 <section id="resume" class="resume">
-	<div class="container-fluid resume-clean py-5">
-		<div class="intro">
-			<h1 class="text-center">Resume</h1>
-			<!-- <p class="text-center">Creating projects is one of the best ways to learn. Here are a few of the projects I've completed over the years.</p> -->
-		</div>
-		<dl class="row" style="padding-top:1.5em;">
-
-	<dt class="col-sm-3"><h2><u>Experience</u></h2></dt>
-	<dd class="col-sm-7">
-		{% for job in site.data.resume.experience %}
-		<div class="resume-item" style="border-left: 1px solid #DDD; padding-left: 1em;">
-			<h4>{{ job.company }}</h4>
-			<h5 class="text-muted">{{ job.title }} |<small class="text-muted"> {{ job.timeframe }}</small></h5>
-			{{ job.description }}
-			<ul>
-				{% for point in job.points %}
-					<li>{{ point }}</li>
-				{% endfor %}
-			</ul>
-		</div>
-		{% endfor %}
-	</dd>
-
-	<span class="col-sm-11" style="margin-bottom: 1em;"><hr></span>
-
-	<dt class="col-sm-3"><h2><u>Education</u></h2></dt>
-	<dd class="col-sm-7">
-		{% for institute in site.data.resume.education %}
-		<div class="resume-item" style="border-left: 1px solid #DDD; padding-left: 1em; padding-top: 1em;">
-			<h4> Test {{ institute.title }}</h4>
-			<h5 class="text-muted">{{ institute.credential }} |<small class="text-muted"> {{ institute.timeframe }}</small></h5>
-			<p>{{institute.description}}</p>
-		</div>
-		{% endfor %}
-	</dd>
-
-	<span class="col-sm-11" style="margin-bottom: 1em;"><hr></span>
-
-	<dt class="col-sm-3"><h2><u>Skills</u></h2></dt>
-	<dd class="col-sm-7">
-		<div class="resume-item" style="border-left: 1px solid #DDD; padding-left: 1em; padding-top: 1em;">
-			<div class="row">
-				{% for event in site.data.resume.timeline %}
-					<div class="col-4 col-md-3 align-self-end pb-1 mb-1">
-						<p class="mb-1">{{event.time}}</p>
-					</div>
-
-					<div class="col-8 col-md-9 " style="border-left: 1px solid #DDD;">
-						{% for skill in event.skills %}
-							<p class="">{{skill}}</p>
-						{% endfor %}
-					</div>
-					<div class="col-4 col-md-3 px-0 pt-0 pb-3">
-						<hr class="m-0">
-					</div>
-					<div class="col-8 col-md-9" style="border-left: 1px solid #DDD;">
-					</div>
-				{% endfor %}
+	<div class="resume-clean">
+		<div class="container">
+			<div class="intro">
+				<h1 class="text-center">Resume</h1>
+				<!-- <p class="text-center">Creating projects is one of the best ways to learn. Here are a few of the projects I've completed over the years.</p> -->
 			</div>
+			<dl class="row" style="padding-top:1.5em;">
+
+				<!-- Experience -->
+				<dt class="col-sm-3"><h2><u>Experience</u></h2></dt>
+				<dd class="col-sm-7">
+					{% for job in site.data.resume.experience %}
+					<div class="resume-item" style="border-left: 1px solid #DDD; padding-left: 1em;">
+						<h4>{{ job.company }}</h4>
+						<h5 class="text-muted">{{ job.title }} |<small class="text-muted"> {{ job.timeframe }}</small></h5>
+						{{ job.description }}
+						<ul>
+							{% for point in job.points %}
+								<li>{{ point }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+					{% endfor %}
+				</dd>
+
+				<span class="col-sm-11" style="margin-bottom: 1em;"><hr></span>
+
+				<!-- Education -->
+				<dt class="col-sm-3"><h2><u>Education</u></h2></dt>
+				<dd class="col-sm-7">
+					{% for institute in site.data.resume.education %}
+					<div class="resume-item" style="border-left: 1px solid #DDD; padding-left: 1em; padding-top: 1em;">
+						<h4>{{ institute.title }}</h4>
+						<h5 class="text-muted">{{ institute.credential }} |<small class="text-muted"> {{ institute.timeframe }}</small></h5>
+						<p>{{institute.description}}</p>
+					</div>
+					{% endfor %}
+				</dd>
+
+				<span class="col-sm-11" style="margin-bottom: 1em;"><hr></span>
+
+				<!-- Accomplishments -->
+				<dt class="col-sm-3"><h2><u>Accomplishments</u></h2></dt>
+				<dd class="col-sm-7">
+					{% for accomplishment in site.data.resume.accomplishments %}
+					<div class="resume-item" style="border-left: 1px solid #DDD; padding-left: 1em; padding-top: 1em;">
+						<h4><a href="{{ accomplishment.url }}" target="_blank">{{ accomplishment.title }}</a></h4>
+						<h5 class="text-muted"><small class="text-muted"> {{ accomplishment.time }}</small></h5>
+					</div>
+					{% endfor %}
+				</dd>
+
+				<span class="col-sm-11" style="margin-bottom: 1em;"><hr></span>
+
+				<!-- Skills -->
+				<dt class="col-sm-3"><h2><u>Skills</u></h2></dt>
+				<dd class="col-sm-7">
+					{% for event in site.data.resume.timeline %}
+						<div class="resume-item" style="border-left: 1px solid #DDD; padding-left: 1em; padding-top: 1em;">
+							<h4>{{ event.time }}</h4>
+							<ul class="list-unstyled">
+								{% for skill in event.skills %}
+								<li><h5 class="text-muted"><small>{{ skill }}</small></h5></li>
+
+								{% endfor %}
+
+							</ul>
+
+							<!-- <h5 class="text-muted">{% for skill in event.skills %} | {{ skill }}{% endfor %}</h5> -->
+						</div>
+					{% endfor %}
+				</dd>
+
+			</dl>
+
 		</div>
-	</dd>
-
-
-</dl>
-
 	</div>
 </section>

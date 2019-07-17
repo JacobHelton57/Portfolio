@@ -42,16 +42,13 @@ body {
 	padding: 2.5em 0;
 }
 
-
-/* Projects */
+.projects-clean, .resume-clean {
+	padding: 5em 0em;
+}
 
 .project-masthead {
   height: 20vh;
   min-height: 300px;
-}
-
-.projects-clean {
-	padding: 5em 0em;
 }
 
 .projects .item {
