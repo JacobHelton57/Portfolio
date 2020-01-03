@@ -1,5 +1,5 @@
 markdown: kramdown
-baseurl: jacobhelton.dev
+baseurl: /
 permalink: pretty
 exclude: ['README.md']
 collections:
