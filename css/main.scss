@@ -305,8 +305,8 @@ header, #hero, #about, #projects, #blog, #screenshots {
       padding-left: 6em;
     }
 
-    header nav ul {
-        display: none;
+    .desktop-nav {
+        display: flex;
 
         li a {
             text-decoration: none;
@@ -314,6 +314,10 @@ header, #hero, #about, #projects, #blog, #screenshots {
             padding: .3em .8em;
             font-size: .9em;
         }
+    }
+
+    .mobile-nav {
+      display: none;
     }
 }
 
