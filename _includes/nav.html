@@ -1,44 +1,15 @@
-<!-- Navigation -->
-<nav class="navbar bg-dark fixed-top navbar-expand-lg navbar-dark" id="navbar-top">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="{{site.baseurl}}/">
-    Jacob Helton
-  </a>
-  <div class="collapse navbar-collapse" id="navbarToggler">
-    <div class="navbar-nav">
-      <li class="nav-item {% if page.url == '/' || page.url == '/#home'%}active{%endif%}" data-toggle="collapse" data-target=".navbar-collapse">
-        <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
-      </li>
-      <li class="nav-item {% if page.url == '/#about' %}active{%endif%}" data-toggle="collapse" data-target=".navbar-collapse">
-        <a class="nav-link" href="{{ site.baseurl }}/#about">About</a>
-      </li>
-      <li class="nav-item {% if page.url == '/#projects' %}active{%endif%}" data-toggle="collapse" data-target=".navbar-collapse">
-        <a class="nav-link" href="{{ site.baseurl }}/#projects">Projects</a>
-      </li>
-      <li class="nav-item {% if page.url == '/#resume' %}active{%endif%}" data-toggle="collapse" data-target=".navbar-collapse">
-        <a class="nav-link" href="{{ site.baseurl }}/#resume">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="modal" data-target="#contactModal">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://github.com/JacobHelton57/" target="_blank">
-          <ion-icon name="logo-github" style="font-size: 1.3em;">
-          </ion-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/jacob-helton-300b02172" target="_blank">
-          <ion-icon name="logo-linkedin" style="font-size: 1.3em;">
-          </ion-icon>
-        </a>
-      </li>
-    </div>
-
-
-  </div>
-</nav>
-
-{% include contact.html %}
+<header>
+    <a href="{{site.baseurl}}" class="logo"><strong>Jacob Helton</strong></a>
+    <nav>
+        <!-- <img src="{{site.baseurl}}img/menu.svg" class="menu" alt="Menu"> -->
+        <span class="menu">
+        {% octicon three-bars height:24 %}
+        </span>
+        <ul>
+            <li><a href="{{site.baseurl}}" class="{%if page.url == '/'%}active{%endif%}">Home</a></li>
+            <li><a href="{{site.baseurl}}#projects" class="{% if page.url contains 'projects' %}active{%endif%}">Work</a></li>
+            <li class="{%if page.url contains '#about'%}active{%endif%}"><a href="{{site.baseurl}}#about">About</a></li>
+            <!-- <li><a href="{{site.baseurl}}#contact">Contact</a></li> -->
+        </ul>
+    </nav>
+</header>

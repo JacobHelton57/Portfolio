@@ -1,0 +1,363 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,300;1,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #353541;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button, li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --- Components --- */
+h1 {
+    font-weight: 800;
+    font-size: 3em;
+    position: relative;
+    color: #fff;
+
+    &.highlight {
+        position: relative;
+        
+        &:before {
+        content: '';
+        position: absolute;
+        // background: #D6B17D;
+        background: #9CDCFE;
+        height: .2em;
+        width: 2.9em;
+        top: 1.2em;
+        left: 0;
+        }
+    }
+}
+  
+h2 {
+    color: #9CDCFE;
+    font-weight: 300;
+    font-size: 2em;
+
+    &.highlight {
+        font-style: italic;
+    }
+}
+  
+h3 {
+    color: #9CDCFE;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-transform: uppercase;
+
+    &.highlight {
+        border-left: 3px solid #9CDCFE;
+        padding-left: 1em;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+  font-size: 0.8rem;
+
+  li {
+    float: left;
+    background: #424250;
+    border-radius: 3px;
+    color: #AAA;
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    padding: 0 .8em 0 1.8em;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+
+    &::before {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+        content: '';
+        height: 6px;
+        left: 10px;
+        position: absolute;
+        width: 6px;
+        top: 10px;
+    }
+  }
+}
+
+.watermark {
+  font-size: 19vw;
+  color: #4EC9B0;
+  z-index: -1;
+  margin-left: -.1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+button {
+  &.button-round {
+      background: #C586C0;
+      color: #fff;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: .5em .75em;
+      border: none;
+      border-radius: 3em;
+
+      &.secondary {
+        background: none;
+        border: .2em solid #C586C0;
+        color: #C586C0;
+        padding: .3em .55em;
+      }
+  }
+}
+
+svg.octicon {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  margin-right: 3px;
+  fill: #fff;
+
+  .secondary & {
+    fill: #C586C0;
+  }
+
+  &-three-bars {
+    fill: #9CDCFE;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-size: 1.2em;
+
+  nav ul {
+      display: none;
+
+      li a.active {
+          text-decoration: underline;
+          font-weight: bold;
+      }
+  }
+
+  a, strong {
+      color: #9CDCFE;
+  }
+}
+
+/* --- Section Styling --- */
+
+header, #hero, #about, #projects, #blog, #screenshots {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+#hero {
+    padding-bottom: 3em;
+
+    & > * {
+        margin-top: 1em;
+    }
+}
+
+#about {
+    padding-bottom: 3em;
+
+    background: #3e3e4e;
+
+    $gutter-width: 20px;
+    $column-width: 30%;
+    $column-min-width: 10rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$gutter-width;
+
+    &>div {
+      flex-basis: 30%;
+      flex-grow: 3;
+      margin: $gutter-width;
+      min-width: $column-min-width;
+    }
+
+    p {
+      width: 18em;
+    }
+
+    button {
+      font-size: 1em;
+      margin-top: 1em;
+    }
+
+    .social {
+      display: flex;
+      height: 36px;
+
+      img {
+        object-fit: contain;
+        width: 36px;
+        padding-right: 20px;
+      }
+    }
+
+}
+
+#projects {
+
+  padding: 3em;
+
+    h1:before {
+        background: #4EC9B0;
+    }
+}
+
+#blog {
+  background: #3e3e4e;
+  padding-bottom: 2em;
+
+  button {
+    margin-top: .5em;
+    margin-right: .8em;
+  }
+}
+
+
+/* Responsive Breakpoints */
+@media (min-width: 550px) {
+    .menu {
+        display: none;
+    }
+
+    #hero {
+        padding-bottom: 4em;
+    }
+
+    header, #hero, #about, #projects, #blog, #screenshots {
+        padding-right: 8em;
+        padding-left: 8em;
+    }
+
+    header {
+      padding-right: 4em;
+      padding-left: 4em;
+    }
+
+    header nav ul {
+        display: flex;
+
+        li a {
+            text-decoration: none;
+            display: block;
+            padding: .3em .8em;
+            font-size: .9em;
+        }
+    }
+}
+
+/* --- Custom Elements --- */
+.projects {
+
+  $gutter-width: 20px;
+  $column-width: 30%;
+  $column-min-width: 10rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$gutter-width;
+
+  .project {
+    flex-basis: $column-width;
+    flex-grow: 1;
+    margin: $gutter-width;
+    min-width: $column-min-width;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      margin-top: .25em;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    button {
+      font-size: 1em;
+    }
+  }
+
+  // Keeps element in last row same size as others
+  &:before, &:after {
+    content: "";
+    order: 2;
+    height: 1px;
+    margin: $gutter-width;
+    flex-grow: 1;
+    flex-basis: $column-width;
+    min-width: $column-min-width;
+  }
+}
+
+.screenshots {
+  $gutter-width: 20px;
+  $column-width: 45%;
+  $column-min-width: 10rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$gutter-width;
+
+  .shot {
+    flex-basis: $column-width;
+    flex-grow: 1;
+    margin: $gutter-width;
+    min-width: $column-min-width;
+
+    img {
+      width: 100%;
+      box-shadow: #353541;
+    }
+  }
+
+  // Keeps element in last row same size as others
+  &:before, &:after {
+    content: "";
+    order: 2;
+    height: 1px;
+    margin: $gutter-width;
+    flex-grow: 1;
+    flex-basis: $column-width;
+    min-width: $column-min-width;
+  }
+}
+
+.footer-nav {
+  a {
+    color: #9CDCFE;
+  }
+}

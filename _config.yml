@@ -4,22 +4,23 @@ permalink: pretty
 exclude: ['README.md']
 collections:
   projects:
+    order:
+      - give.md
+      - broadtime.md
+      - maxxmockup.md
     output: true
-    permalink: /projects/:title
 defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  -
-    scope:
+  - scope:
       path: ""
       type: "projects"
     values:
       layout: "project"
-      category: "projects"
-      banner_image: "350x230.png"
+      button1text: "Demo"
+      button2text: "View Source"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 plugins:
   - github-pages
+  - jekyll-octicons

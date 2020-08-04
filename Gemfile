@@ -5,10 +5,11 @@ source "https://rubygems.org"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 
-gem "jekyll", "~> 3.8.5"
-gem "liquid", "~> 4.0.0"
+gem "jekyll"
+gem "liquid"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "github-pages", "~> 198"
+  gem "github-pages"
+  gem 'jekyll-octicons'
 end
