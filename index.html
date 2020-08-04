@@ -1,0 +1,41 @@
+---
+layout: default
+title: Home
+watermark: Developer
+---
+
+<h1 class="watermark">Developer</h1>
+
+<div class="main-content">
+            
+    <section id="hero">
+        <h1>I like to make <br>products you'll love</h1>
+        <h3 class="highlight">Full Stack Developer</h3>
+        <button id="learn-more" class="button-round">Learn more</button>
+    </section>
+
+    <section id="projects">
+        <h1 class="highlight">My Work</h1>
+
+        <div class="projects">
+            {% for project in site.projects %}
+            <div class="project">
+                <a href="{{ project.url }}">
+                    <img src="img/{{ project.thumbnail }}" alt="{{ project.title }} logo">
+                </a>
+                <h3>{{ project.title }} | {{ project.heading }}</h3>
+                {% if project.tags != "" %}
+                <ul class="tags">
+                    {% for tag in project.tags %}
+                    <li>{{ tag }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                <p>{{ project.content }}</p>
+                <button class="button-round"><a href="{{ project.url }}">Learn More</a></button>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+</div>
