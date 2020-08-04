@@ -15,5 +15,27 @@
     
     {% include footer.html %}
 
+    <script>
+
+        // Add active to current nav item
+        var hash = window.location.hash;
+        $('nav li a').each(function() { 
+            if($(this).attr('href').substring($(this).attr('href').indexOf('#')) == hash) { 
+                $(this).addClass('active')
+            }
+        });
+
+        // Toggle active nav item on click
+        $('nav li a').click(function() {
+            $('nav li a').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        // Animate learn more
+        $('#learn-more').click(function() {
+            $('html, body').animate({
+                scrollTop: ($('#projects').offset().top)
+            }, 1500);})
+    </script>
 </body>
 </html>

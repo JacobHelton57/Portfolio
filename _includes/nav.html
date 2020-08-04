@@ -2,9 +2,7 @@
     <a href="{{site.baseurl}}" class="logo"><strong>Jacob Helton</strong></a>
     <nav>
         <!-- <img src="{{site.baseurl}}img/menu.svg" class="menu" alt="Menu"> -->
-        <span class="menu">
-        {% octicon three-bars height:24 %}
-        </span>
+
         <ul>
             <li><a href="{{site.baseurl}}" class="{%if page.url == '/'%}active{%endif%}">Home</a></li>
             <li><a href="{{site.baseurl}}#projects" class="{% if page.url contains 'projects' %}active{%endif%}">Work</a></li>
