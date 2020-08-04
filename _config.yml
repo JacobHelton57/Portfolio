@@ -23,4 +23,3 @@ defaults:
       layout: "default"
 plugins: 
   - github-pages
-  - jekyll-octicons
