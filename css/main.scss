@@ -147,6 +147,17 @@ svg.octicon {
   }
 }
 
+.social {
+  display: flex;
+  height: 36px;
+
+  img {
+    object-fit: contain;
+    width: 36px;
+    padding-right: 20px;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -159,6 +170,47 @@ header {
       li a.active {
           text-decoration: underline;
           font-weight: bold;
+      }
+
+      &.mobile-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #424250;
+        height: 100vh;
+        width: 60vw;
+        z-index: 1;
+
+        padding: 1em 2em 1em 1em;
+
+        .social {
+          padding: .8em;
+        }
+
+        #close {
+          background: none;
+          border: none;
+          float: right;
+
+          .octicon {
+            fill: #9CDCFE;
+          }
+        }
+
+        li a {
+          text-decoration: none;
+          display: block;
+          padding: .8em 1em;
+          font-size: .9em;
+
+          .octicon {
+            fill: #9CDCFE;
+          }
+
+          span {
+            margin-left: .2em;
+          }
+      }
       }
   }
 
@@ -211,17 +263,6 @@ header, #hero, #about, #projects, #blog, #screenshots {
       margin-top: 1em;
     }
 
-    .social {
-      display: flex;
-      height: 36px;
-
-      img {
-        object-fit: contain;
-        width: 36px;
-        padding-right: 20px;
-      }
-    }
-
 }
 
 #projects {
@@ -260,12 +301,12 @@ header, #hero, #about, #projects, #blog, #screenshots {
     }
 
     header {
-      padding-right: 4em;
-      padding-left: 4em;
+      padding-right: 6em;
+      padding-left: 6em;
     }
 
     header nav ul {
-        display: flex;
+        display: none;
 
         li a {
             text-decoration: none;

@@ -1,9 +1,38 @@
 <header>
     <a href="{{site.baseurl}}/" class="logo"><strong>Jacob Helton</strong></a>
+    
     <nav>
         <span class="menu">
             <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
-        </span>
+        </span> 
+        <ul class="mobile-nav">
+            <a href="{{site.baseurl}}/" class="logo"><strong>Jacob Helton</strong></a>
+            <button id="close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="octicon octicon-x" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path></svg>
+            </button>
+            <li><a href="{{site.baseurl}}/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="octicon octicon-home" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M8.156 1.835a.25.25 0 00-.312 0l-5.25 4.2a.25.25 0 00-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v5.25h2.75a.25.25 0 00.25-.25V6.23a.25.25 0 00-.094-.195l-5.25-4.2zM6.906.664a1.75 1.75 0 012.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0113.25 15h-3.5a.75.75 0 01-.75-.75V9H7v5.25a.75.75 0 01-.75.75h-3.5A1.75 1.75 0 011 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2h-.001z"></path></svg>
+                <span>Home</span>
+            </a></li>
+            <li><a href="{{site.baseurl}}/#projects">
+                <svg xmlns="http://www.w3.org/2000/svg" class="octicon octicon-code-square" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M1.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25H1.75zM0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0114.25 16H1.75A1.75 1.75 0 010 14.25V1.75zm9.22 3.72a.75.75 0 000 1.06L10.69 8 9.22 9.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM6.78 6.53a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 101.06-1.06L5.31 8l1.47-1.47z"></path></svg>
+                <span>Work</span>
+            </a></li>
+            <li><a href="{{site.baseurl}}/#about">
+                <svg xmlns="http://www.w3.org/2000/svg" class="octicon octicon-person" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M10.5 5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm.061 3.073a4 4 0 10-5.123 0 6.004 6.004 0 00-3.431 5.142.75.75 0 001.498.07 4.5 4.5 0 018.99 0 .75.75 0 101.498-.07 6.005 6.005 0 00-3.432-5.142z"></path></svg>
+                <span>About</span>
+            <!-- <div class="social">
+                <a href="https://www.linkedin.com/in/jacob-helton/" target="_blank">
+                    <img src="{{ site.baseurl }}/img/LI-In-Bug.png" alt="LinkedIn Profile">
+                </a>
+                <a href="https://github.com/JacobHelton57" target="_blank">
+                    <img src="{{ site.baseurl }}/img/GitHub-Mark-64px.png" alt="Github Profile">
+                </a>
+                <a href="https://codepen.io/jacobhelton57" target="_blank">
+                    <img src="{{ site.baseurl }}/img/codepen-white.png" alt="Codepen Profile">
+                </a>
+            </div> -->
+        </ul>
         <ul>
             <li><a href="{{site.baseurl}}/" class="{%if page.url == '/'%}active{%endif%}">Home</a></li>
             <li><a href="{{site.baseurl}}/#projects" class="{% if page.url contains 'projects' %}active{%endif%}">Work</a></li>
