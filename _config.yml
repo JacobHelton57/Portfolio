@@ -2,25 +2,25 @@ markdown: kramdown
 baseurl: /
 permalink: pretty
 exclude: ['README.md']
-collections:
-  projects:
-    order:
+collections: 
+  projects: 
+    order: 
       - give.md
       - broadtime.md
       - maxxmockup.md
     output: true
-defaults:
-  - scope:
+defaults: 
+  - scope: 
       path: ""
       type: "projects"
-    values:
+    values: 
       layout: "project"
       button1text: "Demo"
       button2text: "View Source"
-  - scope:
+  - scope: 
       path: ""
-    values:
+    values: 
       layout: "default"
-plugins:
+plugins: 
   - github-pages
   - jekyll-octicons
