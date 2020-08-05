@@ -10,11 +10,11 @@
             <button id="close">
                 <svg xmlns="http://www.w3.org/2000/svg" class="octicon octicon-x" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path></svg>
             </button>
-            <li><a href="{{site.baseurl}}/">
+            <li><a href="{{site.baseurl}}/" class="{%if page.url == '/'%}active{%endif%}">
                 <svg xmlns="http://www.w3.org/2000/svg" class="octicon octicon-home" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M8.156 1.835a.25.25 0 00-.312 0l-5.25 4.2a.25.25 0 00-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v5.25h2.75a.25.25 0 00.25-.25V6.23a.25.25 0 00-.094-.195l-5.25-4.2zM6.906.664a1.75 1.75 0 012.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0113.25 15h-3.5a.75.75 0 01-.75-.75V9H7v5.25a.75.75 0 01-.75.75h-3.5A1.75 1.75 0 011 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2h-.001z"></path></svg>
                 <span>Home</span>
             </a></li>
-            <li><a href="{{site.baseurl}}/#projects">
+            <li><a href="{{site.baseurl}}/#projects" class="{% if page.url contains 'projects' %}active{%endif%}">
                 <svg xmlns="http://www.w3.org/2000/svg" class="octicon octicon-code-square" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M1.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25H1.75zM0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0114.25 16H1.75A1.75 1.75 0 010 14.25V1.75zm9.22 3.72a.75.75 0 000 1.06L10.69 8 9.22 9.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM6.78 6.53a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 101.06-1.06L5.31 8l1.47-1.47z"></path></svg>
                 <span>Work</span>
             </a></li>
@@ -26,7 +26,7 @@
         <ul class="desktop-nav">
             <li><a href="{{site.baseurl}}/" class="{%if page.url == '/'%}active{%endif%}">Home</a></li>
             <li><a href="{{site.baseurl}}/#projects" class="{% if page.url contains 'projects' %}active{%endif%}">Work</a></li>
-            <li><a href="{{site.baseurl}}/#about">About</a></li>
+            <li><a href="{{site.baseurl}}/#about" class="{% if page.url contains 'about'%}active{%endif%}">About</a></li>
         </ul>
     </nav>
 </header>
